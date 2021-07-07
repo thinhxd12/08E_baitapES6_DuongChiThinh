@@ -127,7 +127,6 @@ import { NguoiKhaiBao } from "../model/NguoiKhaiBao.js";
 let renderThongTin = () => {
     let nguoiKhaiBao = new NguoiKhaiBao();
     let arrInput = document.querySelectorAll('fieldset input, fieldset select');
-    console.log('arrInput', arrInput)
     for (let input of arrInput) {
         let { name, value } = input;
         nguoiKhaiBao[name] = value;
