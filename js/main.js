@@ -55,7 +55,6 @@ import { NguoiKhaiBao } from "../model/NguoiKhaiBao.js";
         },
         onFinished: function (event, currentIndex) {
             alert('Submited');
-            renderThongTin();
         },
         onStepChanged: function (event, currentIndex, priorIndex) {
 
@@ -123,8 +122,7 @@ import { NguoiKhaiBao } from "../model/NguoiKhaiBao.js";
 
 })(jQuery);
 
-
-let renderThongTin = () => {
+document.querySelector('.signup-form .actions ul li:last-child a').onclick = function () {
     let nguoiKhaiBao = new NguoiKhaiBao();
     let arrInput = document.querySelectorAll('fieldset input, fieldset select');
     for (let input of arrInput) {
